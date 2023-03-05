@@ -1,13 +1,17 @@
+import 'package:cozy_kost/models/space.dart';
 import 'package:cozy_kost/theme.dart';
 import 'package:cozy_kost/widgets/city_card.dart';
+import 'package:cozy_kost/widgets/space_card.dart';
 import 'package:flutter/material.dart';
 import 'package:cozy_kost/models/city.dart';
+import 'package:cozy_kost/models/space.dart';
 
 class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       body: SafeArea(
+        bottom: false,
         child: Padding(
           padding: EdgeInsets.symmetric(vertical: edge),
           child: ListView(
@@ -73,6 +77,72 @@ class HomePage extends StatelessWidget {
                       ),
                     ),
                     const SizedBox(width: 24),
+                  ],
+                ),
+              ),
+              SizedBox(height: 30),
+              // NOTE: RECOMMENDED SPACE
+              Padding(
+                padding: EdgeInsets.only(
+                  left: edge,
+                ),
+                child: Text(
+                  'Recommended Space',
+                  style: redularTextStyle.copyWith(fontSize: 16),
+                ),
+              ),
+              SizedBox(height: 16),
+              Padding(
+                padding: EdgeInsets.symmetric(horizontal: edge),
+                child: Column(
+                  children: [
+                    SpaceCard(
+                      Space(
+                        id: 1,
+                        name: 'Kuretakeso Hott',
+                        imageUrl: 'assets/images/space1.png',
+                        price: 52,
+                        city: 'Bandung',
+                        country: 'Indonesia',
+                        rating: 4,
+                      ),
+                    ),
+                    SizedBox(height: 30),
+                    SpaceCard(
+                      Space(
+                        id: 1,
+                        name: 'Kuretakeso Hott',
+                        imageUrl: 'assets/images/space1.png',
+                        price: 52,
+                        city: 'Bandung',
+                        country: 'Indonesia',
+                        rating: 4,
+                      ),
+                    ),
+                    SizedBox(height: 30),
+                    SpaceCard(
+                      Space(
+                        id: 1,
+                        name: 'Roemah Nenek',
+                        imageUrl: 'assets/images/space1.png',
+                        price: 11,
+                        city: 'Seattle',
+                        country: 'Bogor',
+                        rating: 4,
+                      ),
+                    ),
+                    SizedBox(height: 30),
+                    SpaceCard(
+                      Space(
+                        id: 1,
+                        name: 'Kuretakeso Hott',
+                        imageUrl: 'assets/images/space1.png',
+                        price: 20,
+                        city: 'Jakarta',
+                        country: 'Indonesia',
+                        rating: 4,
+                      ),
+                    ),
                   ],
                 ),
               )
