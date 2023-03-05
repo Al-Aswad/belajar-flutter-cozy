@@ -1,6 +1,7 @@
 import 'package:cozy_kost/models/space.dart';
 import 'package:cozy_kost/models/tips.dart';
 import 'package:cozy_kost/theme.dart';
+import 'package:cozy_kost/widgets/bottom_navbar_item.dart';
 import 'package:cozy_kost/widgets/city_card.dart';
 import 'package:cozy_kost/widgets/space_card.dart';
 import 'package:cozy_kost/widgets/tips_card.dart';
@@ -184,7 +185,39 @@ class HomePage extends StatelessWidget {
                   ),
                 ],
               ),
-            )
+            ),
+            SizedBox(height: 80 + edge),
+          ],
+        ),
+      ),
+      floatingActionButton: Container(
+        height: 65,
+        // width full
+        width: MediaQuery.of(context).size.width - (3 * edge),
+        // width: MediaQuery.of(context).size.width - (2 * edge),
+        margin: EdgeInsets.symmetric(
+          horizontal: edge,
+        ),
+        decoration: BoxDecoration(
+          color: Color(0xffF6F7F8),
+          borderRadius: BorderRadius.circular(23),
+        ),
+        child: Row(
+          mainAxisAlignment: MainAxisAlignment.spaceAround,
+          children: [
+            BottomNavbarItem(
+              imageUrl: 'assets/icons/icon_home.png',
+              isActive: true,
+            ),
+            BottomNavbarItem(
+              imageUrl: 'assets/icons/icon_mail.png',
+            ),
+            BottomNavbarItem(
+              imageUrl: 'assets/icons/icon_card.png',
+            ),
+            BottomNavbarItem(
+              imageUrl: 'assets/icons/icon_love.png',
+            ),
           ],
         ),
       ),
