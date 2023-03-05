@@ -11,10 +11,16 @@ class BottomNavbarItem extends StatelessWidget {
     return Column(
       children: [
         Spacer(),
-        Image.asset(
-          imageUrl,
-          width: 26,
-        ),
+        isActive
+            ? Image.asset(
+                imageUrl,
+                width: 26,
+                color: Color(0xff6F35A5),
+              )
+            : Image.asset(
+                imageUrl,
+                width: 26,
+              ),
         Spacer(),
         isActive
             ? Container(
@@ -25,7 +31,10 @@ class BottomNavbarItem extends StatelessWidget {
                   borderRadius: BorderRadius.circular(1000),
                 ),
               )
-            : Container()
+            : Container(
+                width: 30,
+                height: 4,
+              )
       ],
     );
   }
