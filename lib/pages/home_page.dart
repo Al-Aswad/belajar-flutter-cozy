@@ -46,7 +46,7 @@ class HomePage extends StatelessWidget {
               ),
               child: Text(
                 'Popular Cities',
-                style: redularTextStyle.copyWith(fontSize: 16),
+                style: regularTextStyle.copyWith(fontSize: 16),
               ),
             ),
             SizedBox(height: 16),
@@ -92,7 +92,7 @@ class HomePage extends StatelessWidget {
               ),
               child: Text(
                 'Recommended Space',
-                style: redularTextStyle.copyWith(fontSize: 16),
+                style: regularTextStyle.copyWith(fontSize: 16),
               ),
             ),
             SizedBox(height: 16),
@@ -158,7 +158,7 @@ class HomePage extends StatelessWidget {
               ),
               child: Text(
                 'Tips & Guidance',
-                style: redularTextStyle.copyWith(fontSize: 16),
+                style: regularTextStyle.copyWith(fontSize: 16),
               ),
             ),
             SizedBox(height: 16),

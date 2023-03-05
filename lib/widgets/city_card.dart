@@ -31,7 +31,7 @@ class CityCard extends StatelessWidget {
                         width: 50,
                         height: 30,
                         decoration: BoxDecoration(
-                          color: purpuleColor,
+                          color: purpleColor,
                           borderRadius: const BorderRadius.only(
                             bottomLeft: Radius.circular(36),
                           ),

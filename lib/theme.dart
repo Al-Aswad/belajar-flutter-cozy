@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-Color purpuleColor = const Color(0xff6F35A5);
+Color purpleColor = const Color(0xff6F35A5);
 Color orangeColor = const Color(0xffFFA000);
 Color blackColor = const Color(0xff000000);
 Color whiteColor = const Color(0xffFFFFFF);
@@ -24,10 +24,10 @@ TextStyle greyTextStyle = GoogleFonts.poppins(
 
 TextStyle purpleTextStyle = GoogleFonts.poppins(
   fontWeight: FontWeight.w500,
-  color: purpuleColor,
+  color: purpleColor,
 );
 
-TextStyle redularTextStyle = GoogleFonts.poppins(
+TextStyle regularTextStyle = GoogleFonts.poppins(
   fontWeight: FontWeight.w400,
   color: blackColor,
 );
